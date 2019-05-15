@@ -1,6 +1,6 @@
 // Because classes are not hoisted you will need to start your code at the bottom of the page.  Look for the comment "START HERE"
 
-class Article {
+class Headline {
   constructor(domElement) {
     // assign this.domElement to the passed in domElement
     this.domElement;
@@ -26,4 +26,7 @@ class Article {
 
 */
 
-let articles;
+let articles = document.querySelectorAll('.article');
+articles.forEach(headline => new Headline(headline)); 
+
+
