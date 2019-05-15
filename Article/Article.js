@@ -7,12 +7,15 @@ class Headline {
     
     // create a reference to the ".expandButton" class. 
     this.expandButton = this.domElement.querySelector('.expandButton');
+    this.redX = this.domElement.querySelector('i');
     
     // Using your expandButton reference, update the text on your expandButton to say "expand"
     this.expandButton.textContent = 'Click to Expand'
     
     // Set a click handler on the expandButton reference, calling the expandArticle method.
     this.expandButton.addEventListener('click', () => this.expandArticle())
+
+    this.redX.addEventListener('click', () => this.closeBox())
   }
 
   expandArticle() {
@@ -33,6 +36,16 @@ class Headline {
       this.expandButton.textContent = 'Click to Expand'
     }
    
+  }
+
+  closeBox() {
+    // this.domElement.style.display = 'none'
+    TweenMax.to(this.domElement, .5, {
+      scale: 0,    
+      rotation: 180,
+    });
+    // this.domElement.style.display = 'none'
+    console.log('trigger works!')
   }
 }
 
