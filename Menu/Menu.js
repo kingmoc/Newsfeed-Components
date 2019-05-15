@@ -31,4 +31,14 @@ console.log(menuButton);
 // Using your menuButton reference, add a click handler that calls toggleMenu
 menuButton.addEventListener('click', e => {
   toggleMenu()
+  event.stopPropagation()
+})
+
+document.addEventListener('click', e => {
+  menu.classList.toggle('menu--open',false)
+  TweenMax.to(menu, 1.5, {
+    x: -500,    
+    ease: Power4.easeOut,
+  });
+  console.log('*** window-closing ***');
 })
