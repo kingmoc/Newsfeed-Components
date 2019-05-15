@@ -84,6 +84,12 @@
   transform: translate(-50%);
   background-color: white;
 }
+.article i {
+  color: #f80000;
+  position: absolute;
+  top: 5px;
+  right: 7px;
+}
 /* It is important to note, you will not be writing any CSS in this file*/
 .header {
   width: 100%;
