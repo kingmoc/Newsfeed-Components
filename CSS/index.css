@@ -84,9 +84,6 @@
   transform: translate(-50%);
   background-color: white;
 }
-.article-open {
-  height: 400px;
-}
 /* It is important to note, you will not be writing any CSS in this file*/
 .header {
   width: 100%;

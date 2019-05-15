@@ -13,7 +13,7 @@ const toggleMenu = () => {
       console.log('opening');
   }
   else {
-      TweenMax.to(menu, 1.5, {
+      TweenMax.to(menu, 2, {
         x: -500,    
         ease: Power4.easeOut,
       });
